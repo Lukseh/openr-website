@@ -1,0 +1,39 @@
+:root {
+    --footer-font-size: 3vh;
+    --footer-list-font-size: 2vh;
+    --footer-background-color: #1c1c1c;
+}
+footer {
+  margin: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0.1vh;
+  background: var(--header-background-color);
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6vh;
+  color: var(--font-color-main);
+  border-radius: var(--radius);
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1000;
+}
+
+footer p {
+  margin: 0 0 0 2em;
+  display: flex;
+}
+
+footer ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  padding: 1em 0;
+  font-size: var(--header-list-font-size);
+}

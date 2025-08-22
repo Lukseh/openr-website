@@ -27,8 +27,8 @@ function TournamentCard({ active, name, challonge, infobox }: TournamentCardProp
 
 function League() {
   return (
-    <main>
-      <div className="tournaments">
+    <main className="tournaments">
+      <br />
         <TournamentCard
           active={true}
           name="Season 1"
@@ -41,7 +41,6 @@ function League() {
           challonge="https://challonge.com/openRseason0"
           infobox="Season 0 finished. check out the winner and sing up for next one."
           />
-      </div>
     </main>
   );
 }

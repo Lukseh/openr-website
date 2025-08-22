@@ -7,12 +7,15 @@ type PartnerCardType = {
 };
 
 function PartnerCard({name, website, logoURL} : PartnerCardType) {
+  function NewTab(website:string) {
+            window.open(website+"", '_blank');
+        }
   return (
     <>
       <div className="PartnerCard">
         <p>{name}</p>
         <img src={logoURL}/><br />
-        <a href={website}>Check out their website</a><br />
+        <button onClick={ () => NewTab(website)}>Check out their website</button><br />
       </div>
     <br />
     <br />

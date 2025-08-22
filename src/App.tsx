@@ -7,6 +7,7 @@ import Partners from './Partners';
 import SignUp from './SignUp';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Footer from './Footer';
 
 function App() {
   const location = useLocation();
@@ -36,7 +37,8 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/" element={<Main />} />
       </Routes>
-      </>
+      <Footer />
+    </>
   );
 }
 

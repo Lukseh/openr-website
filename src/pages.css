@@ -1,7 +1,7 @@
 :root {
     --page-title-font-size: 2rem;
     --param-font-size: 1.3rem;
-    --page-background-color: #1f1f1f;
+    --page-background-color: #1f1f1fdf;
 
 }
 a {
@@ -29,6 +29,7 @@ main {
     text-align: center;
     background-color: var(--page-background-color);
     border-radius: calc(var(--radius) - 1vh);
+    min-height: 75vh;
 }
 #page-title {
     font-size: var(--page-title-font-size);
@@ -54,36 +55,6 @@ main {
     text-shadow: 6px 6px 8px var(--shadow-color);
 }
 /* league page */
-*::-webkit-scrollbar {
-  height: 12px;
-  width: 12px;
-}
-*::-webkit-scrollbar-track {
-  border-radius: var(--radius);
-  background-color: var(--purple-transparent);
-}
-
-*::-webkit-scrollbar-track:hover {
-  background-color: var(--purple);
-}
-
-*::-webkit-scrollbar-track:active {
-  background-color: var(--purple);
-}
-
-*::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: var(--purple);
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background-color: var(--purple);
-}
-
-*::-webkit-scrollbar-thumb:active {
-  background-color: var(--purple);
-}
-
 .finished-tournament {
     background-color: #120000;
     border-radius: var(--radius);

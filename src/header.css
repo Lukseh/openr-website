@@ -6,7 +6,7 @@
 header {
   margin: 0;
   position: sticky;
-  top: 1vh;
+  top: 0.1vh;
   width: 100%;
   background: var(--header-background-color);
   z-index: 1000;
@@ -14,9 +14,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 7vh;
+  height: 5vh;
   color: var(--font-color-main);
   border-radius: var(--radius);
+  max-width: 60vw;
 }
 
 header p {

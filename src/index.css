@@ -6,10 +6,11 @@
   line-height: 1.5;
   --background-color: #565656;
   background-color: var(--background-color);
-  --background-image: url("/pexels-renato-calsavara-galaxy.png");
+  --background-image: url("https://images.steamusercontent.com/ugc/13699725047454942954/CB423A0DBB13DF99D48679790C2A2770BDBE81C0/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
   background-repeat: no-repeat;
-  background-size:cover;
   background-image: var(--background-image);
+  background-attachment: fixed;
+  background-size: cover;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,6 +24,36 @@
   --shadow-color: #220090;
 
   --radius: 4vh;
+  overflow-y: scroll;
+}
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: var(--radius);
+  background-color: var(--purple-transparent);
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: var(--purple);
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: var(--purple);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--purple);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--purple);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--purple);
 }
 
 body {
@@ -51,6 +82,7 @@ button {
   background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: var(--purple);
 }
 button:hover {
   border-color: var(--purple);
