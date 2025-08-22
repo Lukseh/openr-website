@@ -10,8 +10,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "postinstall": "rm -rf node_modules package-lock.json && npm install"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.1",
