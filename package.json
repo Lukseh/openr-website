@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lukseh.github.io/openr-website",
+  "homepage": "https://openr.netkom.app",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
