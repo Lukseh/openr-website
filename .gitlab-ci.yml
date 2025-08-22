@@ -9,6 +9,7 @@ pages:
     paths:
       - node_modules/
   script:
+    - rm -rf node_modules package-lock.json
     - npm install
     - npm run build
     - cp -a dist/. public/
