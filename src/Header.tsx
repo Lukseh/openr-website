@@ -6,10 +6,10 @@ function Header() {
         <header className="no-domain-label">
             <img src="/openrleague-transparent.png" id="openr-logo" />
             <ul>
-                <li><Link to="/main"><button>Main</button></Link></li>
-                <li><Link to="/league"><button>League</button></Link></li>
-                <li><Link to="/partners"><button>Partners</button></Link></li>
-                <li><Link to="/sign-up"><button>Sign up</button></Link></li>
+                <li><Link to="/main"><button>MAIN</button></Link></li>
+                <li><Link to="/league"><button>LEAGUE</button></Link></li>
+                <li><Link to="/partners"><button>PARTNERS</button></Link></li>
+                <li><Link to="/sign-up"><button>SIGN UP</button></Link></li>
             </ul>
         </header>
     );
