@@ -29,17 +29,17 @@ function League() {
   return (
     <main className="tournaments">
       <br />
-        <TournamentCard
+        {/* <TournamentCard
           active={true}
           name="Season 1"
           challonge="https://challonge.com/openRseason0"
           infobox="Season 1 starts soon!"
-          />
+          /> */}
           <TournamentCard
-          active={false}
+          active={true}
           name="Season 0"
           challonge="https://challonge.com/openRseason0"
-          infobox="Season 0 finished. check out the winner and sing up for next one."
+          infobox="Season 0 is on-going. check out our Partners to see more."
           />
     </main>
   );
