@@ -1,0 +1,120 @@
+:root {
+    --page-title-font-size: 2rem;
+    --param-font-size: 1.3rem;
+    --page-background-color: #1f1f1f;
+
+}
+a {
+    text-decoration: none;
+    color: var(--font-color-alt);
+}
+
+.no-domain-label a[data-domain]::after {
+    content: none !important;
+}
+a[data-domain]::after {
+    content: attr(data-domain);
+    display: block;
+    margin-left: 0.5vw;
+    font-size: 0.5em;
+    color: #ff0000;
+    text-align: center;
+    text-shadow: none;
+}
+
+/* Main Page */
+main {
+    margin: 1.1em;
+    padding: 1.5em;
+    text-align: center;
+    background-color: var(--page-background-color);
+    border-radius: calc(var(--radius) - 1vh);
+}
+#page-title {
+    font-size: var(--page-title-font-size);
+    font-weight: bolder;
+}
+#intro {
+    font-weight: lighter;
+    font-size: var(--param-font-size);
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-shadow: 6px 6px 8px var(--shadow-color);
+}
+/* sign up page*/
+#signup {
+    font-weight: normal;
+    font-size: var(--param-font-size);
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-shadow: 6px 6px 8px var(--shadow-color);
+}
+/* league page */
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: var(--radius);
+  background-color: var(--purple-transparent);
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: var(--purple);
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: var(--purple);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--purple);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--purple);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--purple);
+}
+
+.finished-tournament {
+    background-color: #120000;
+    border-radius: var(--radius);
+    padding: 1vh;
+}
+.active-tournament {
+    background-color: var(--purple-transparent);
+    border-radius: var(--radius);
+    padding: 1vh;
+    border: solid 0.2rem var(--font-color-main) ;
+}
+#seasoninfo {
+    font-weight: normal;
+    font-size: var(--param-font-size);
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-shadow: 6px 6px 8px var(--shadow-color);
+}
+
+/* Partners */
+.PartnerCard {
+    font-weight: normal;
+    font-size: var(--page-title-font-size);
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-shadow: 6px 6px 8px var(--shadow-color);
+}
+.PartnerCard img {
+    width: 7vw;
+}

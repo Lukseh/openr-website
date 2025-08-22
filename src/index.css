@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap');
+:root {
+  font-family: "Microsoft YaHei UI", "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  --background-color: #565656;
+  background-color: var(--background-color);
+  --background-image: url("/pexels-renato-calsavara-galaxy.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-image: var(--background-image);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --purple: #a4247c;
+  --purple-transparent: #a4247c27;
+  --dark-blue: #6254ff;
+  --font-color-main: var(--purple);
+  --font-color-alt: var(--dark-blue);
+  --shadow-color: #220090;
+
+  --radius: 4vh;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--font-color-main);
+}
+
+header button{
+  color: var(--font-color-main);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: calc(var(--radius) - 2.5vh);
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--purple);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--purple);
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

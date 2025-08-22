@@ -1,0 +1,39 @@
+:root {
+    --header-font-size: 3vh;
+    --header-list-font-size: 2vh;
+    --header-background-color: #1c1c1c;
+}
+header {
+  margin: 0;
+  position: sticky;
+  top: 1vh;
+  width: 100%;
+  background: var(--header-background-color);
+  z-index: 1000;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+  color: var(--font-color-main);
+  border-radius: var(--radius);
+}
+
+header p {
+  margin-left: 2em;
+}
+
+header ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin-right: 2em;
+  font-size: var(--header-list-font-size);
+}
+#openr-logo {
+    margin-left: 2vw;
+    width: 8vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
